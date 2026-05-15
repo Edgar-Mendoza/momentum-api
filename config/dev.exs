@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :momentum_api, MomentumApi.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "edgarmendoza",
+  password: "",
   hostname: "localhost",
   database: "momentum_api_dev",
   stacktrace: true,

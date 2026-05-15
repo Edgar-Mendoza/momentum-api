@@ -7,6 +7,8 @@ defmodule MomentumApiWeb.Router do
 
   scope "/api", MomentumApiWeb do
     pipe_through :api
+
+    resources "/products", ProductController, except: [:new, :edit]
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
