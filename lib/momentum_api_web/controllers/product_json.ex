@@ -19,7 +19,8 @@ defmodule MomentumApiWeb.ProductJSON do
     %{
       id: product.id,
       name: product.name,
-      price: product.price
+      price: product.price,
+      image_url: product.image_url
     }
   end
 end

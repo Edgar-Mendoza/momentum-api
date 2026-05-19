@@ -5,6 +5,7 @@ defmodule MomentumApi.Catalog.Product do
   schema "products" do
     field :name, :string
     field :price, :integer
+    field :image_url, :string
 
     timestamps(type: :utc_datetime)
   end
@@ -12,7 +13,7 @@ defmodule MomentumApi.Catalog.Product do
   @doc false
   def changeset(product, attrs) do
     product
-    |> cast(attrs, [:name, :price])
-    |> validate_required([:name, :price])
+    |> cast(attrs, [:name, :price, :image_url])
+    |> validate_required([:name, :price, :image_url])
   end
 end
